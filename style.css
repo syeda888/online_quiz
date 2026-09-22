@@ -1,0 +1,155 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f1f5f9;
+    color: #222;
+}
+
+.container,
+.box,
+.quiz-container,
+.result,
+.admin-container {
+    width: 90%;
+    max-width: 900px;
+    margin: 50px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px #ccc;
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    color: #1565c0;
+}
+
+input,
+textarea,
+select {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    height: 100px;
+}
+
+button,
+.btn {
+    display: inline-block;
+    background: #1565c0;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    margin: 8px 3px;
+}
+
+button:hover,
+.btn:hover {
+    background: #0d47a1;
+}
+
+.admin-btn {
+    background: #333;
+}
+
+.message {
+    color: #d32f2f;
+}
+
+.question {
+    margin: 25px 0;
+    padding: 20px;
+    background: #f8fafc;
+    border-radius: 8px;
+}
+
+.question label {
+    display: block;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.question input {
+    width: auto;
+}
+
+#timer {
+    position: sticky;
+    top: 10px;
+    background: #d32f2f;
+    color: white;
+    padding: 12px;
+    text-align: center;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.submit-btn {
+    width: 100%;
+    font-size: 18px;
+}
+
+.result {
+    text-align: center;
+}
+
+.score {
+    font-size: 60px;
+    color: #1565c0;
+    font-weight: bold;
+    margin: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background: #1565c0;
+    color: white;
+}
+
+td a {
+    color: red;
+}
+
+@media(max-width:600px) {
+
+    .container,
+    .box,
+    .quiz-container,
+    .result,
+    .admin-container {
+        width: 95%;
+        padding: 20px;
+        margin: 20px auto;
+    }
+
+    table {
+        font-size: 12px;
+    }
+}
